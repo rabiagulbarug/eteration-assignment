@@ -30,7 +30,7 @@ export const Products = () => {
             <div className='flex flex-col lg:flex-row lg:w-[960px] justify-center w-full'>
                 <div className="w-full lg:w-3/12">
                     <div className="lg:hidden flex flex-row mt-4">
-                        <button type="button" onClick={() => setFiltersVisible(prev => !prev)} className="rounded bg-blue-600 text-white text-center p-4 flex-1">Filtre ve Sıralama</button>
+                        <button type="button" onClick={() => setFiltersVisible(prev => !prev)} className="rounded bg-blue-600 text-white text-center p-4 flex-1">Filter & Sort</button>
                     </div>
                     <div className={`bg-white py-5 lg:pr-5 ${filtersVisible ? 'flex' : 'hidden'} lg:flex flex-col`}>
                         <ProductSortBy onSortChange={handleSortChange} />

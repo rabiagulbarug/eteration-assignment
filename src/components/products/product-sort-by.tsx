@@ -41,7 +41,7 @@ export  const ProductSortBy = ({ onSortChange }: ProductSortByProps) => {
     return (
         <div className="w-full bg-white border p-5 h-[220px] overflow-hidden shadow-lg mb-4">
             <div className="flex flex-row mb-4">
-                <span className="text-sm font-semibold">Sırala</span>
+                <span className="text-sm font-semibold">Sort</span>
             </div>
             <div className="flex flex-col mb-4">
                 <label className="inline-flex items-center p-2">

@@ -80,7 +80,7 @@ export const ProductBrands = ({onFilterChange}: FilterProps) => {
         <div>
             <div className='border flex flex-col p-5 h-[200px] bg-white w-full overflow-hidden shadow-lg mb-4'>
                 <div className="flex flex-row mb-4">
-                    <span className="text-sm font-semibold">Markalar</span>
+                    <span className="text-sm font-semibold">Brands</span>
                 </div>
                 <div>
                     <div className='flex flex-row rounded-lg relative flex-1 max-w-[400px]'>

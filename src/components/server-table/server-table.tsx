@@ -40,7 +40,7 @@ export const ServerTable = ({ query, filters, id, sort: defaultSort }: TableProp
         <div>
             <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6'>
                 {response?.data && response.data.map((product: any) => (
-                    <ProductCard product={product} onCart={() => null} key={product.id} />
+                    <ProductCard product={product} key={product.id} />
                 ))}
             </div>
             <div className="mt-4 text-center mb-2 ">

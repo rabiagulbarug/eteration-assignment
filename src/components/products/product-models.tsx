@@ -106,7 +106,7 @@ export const ProductModels = ({onFilterChange}: FilterProps) => {
         <div>
             <div className='border flex flex-col p-5 h-[200px] shadow-md w-full bg-white mb-4'>
                 <div className="flex flex-row mb-4">
-                    <span className="text-sm font-semibold">Modeller</span>
+                    <span className="text-sm font-semibold">Models</span>
                 </div>
                 <div>
                     <div className='flex flex-row rounded-lg relative flex-1 max-w-[400px]'>

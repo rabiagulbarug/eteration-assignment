@@ -1,5 +1,5 @@
 import {Product} from "@/types/types";
-import {createContext, PropsWithChildren, useCallback, useContext, useMemo, useState} from "react";
+import {createContext, PropsWithChildren, useCallback, useContext, useEffect, useMemo, useState} from "react";
 
 interface UiContextType {
     search?: {
@@ -42,6 +42,10 @@ function useProvideUiContext(): UiContextType {
         }
     }, [items])
 
+    useEffect(() => {
+        itemsUpdated()
+    }, [items, itemsUpdated])
+
     const addItemToCart = (product: Product) => {
         setItems(items => {
             const oldItem = items.find(t => t.product.id === product.id)
@@ -50,7 +54,6 @@ function useProvideUiContext(): UiContextType {
             }
             return [...items, {product, quantity: 1}]
         })
-        itemsUpdated()
     }
 
     const removeItemFromCart = (id: string) => setItems(items => [...items.filter(t => t.product.id !== id)])
