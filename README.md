@@ -4,21 +4,55 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/rabiagulbarug/product-sales.git   
+      or 
+   git clone git@github.com:rabiagulbarug/product-sales.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```sh
+   cd product-sales
+   ```
+
+3. Install dependencies:
+
+   ```sh
+   npm install 
+      or 
+   yarn install
+   ```
+
+### Running the Application
+
+To start the development server:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For building the project for production:
 
-You can start editing the page by modifying `app/search.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To start the production server:
+
+```sh
+npm run start
+```
+## Technologies
+
+- **React 18 & Next.js 14**: For building a dynamic, high-performance web application.
+- **React Query**: To efficiently manage and synchronize asynchronous data.
+- **Axios**: For making HTTP requests.
+- **Tailwind CSS**: For styling and responsive design.
 
 ## Learn More
 
@@ -34,3 +68,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Vercel Link : https://eteration-assignment.vercel.app/
