@@ -13,7 +13,7 @@ export const Header = () => {
                 <div className='flex flex-row'>
                     <Link href="/">
                         <span className="text-white font-bold">
-                            Eteration
+                            Product Sales
                         </span>
                     </Link>
                 </div>
