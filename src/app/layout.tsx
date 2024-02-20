@@ -17,8 +17,6 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         setIsMounted(true)
     }, []);
 
-    axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_BASE_URL
-
     return (
         <QueryClientProvider client={new QueryClient()}>
             <UiContextProvider>

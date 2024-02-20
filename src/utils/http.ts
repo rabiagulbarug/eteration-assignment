@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+    baseURL: "https://5fc9346b2af77700165ae514.mockapi.io",
     timeout: 30000,
     headers: {
         Accept: 'application/json',
